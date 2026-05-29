@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
+import defaultBg from '../assets/ascii-bg.png';
 
 const ASCII_CHARS = '@%#*+=-:. ';
 
 export default function InteractiveAsciiBg(props) {
   const {
-    imageSrc = '/src/assets/ascii-bg.png',
+    imageSrc = defaultBg,
     density = 55, // lowered to make cells/spacing larger
     fontSize = 15, // increased for larger, more readable characters
     exposure = 15,

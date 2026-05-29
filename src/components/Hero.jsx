@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import RenaissanceOrb from './RenaissanceOrb';
 import InteractiveAsciiBg from './InteractiveAsciiBg';
+import starImage from '../assets/star.png';
 
 export default function Hero() {
   const sectionRef = useRef(null);
@@ -90,7 +91,7 @@ export default function Hero() {
       </div>
 
       <div className="hero__canvas" style={{ position: 'absolute', top: 0, right: 0, width: '55%', height: '100%', overflow: 'hidden' }}>
-        <InteractiveAsciiBg imageSrc="/src/assets/star.png" offsetX={12} />
+        <InteractiveAsciiBg imageSrc={starImage} offsetX={12} />
       </div>
 
       <div className="scroll-indicator" ref={scrollRef}>
